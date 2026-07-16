@@ -37,4 +37,4 @@ on fs
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
 on boot
-    start boot-hal-1-1
+    start boot-hal-1-2
