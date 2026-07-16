@@ -25,6 +25,13 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+service vendor.qti.vibrator /system/bin/vendor.qti.hardware.vibrator.service
+    user root
+    group root
+    disabled
+    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin
+    seclabel u:r:recovery:s0
+
 on init
     setprop sys.usb.configfs 1
 
@@ -39,3 +46,4 @@ on fs
 on boot
     start health-hal-2-1
     start boot-hal-1-2
+    start vendor.qti.vibrator
