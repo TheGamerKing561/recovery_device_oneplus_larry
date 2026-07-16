@@ -11,6 +11,7 @@ DEVICE_PATH := device/oneplus/larry
 ALLOW_MISSING_DEPENDENCIES := true
 
 # A/B
+ENABLE_VIRTUAL_AB := true
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     boot \
