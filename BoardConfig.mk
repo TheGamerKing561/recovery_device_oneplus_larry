@@ -161,6 +161,9 @@ TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 480
 TW_MAX_BRIGHTNESS := 2047
 
+# Vibrator
+TW_SUPPORT_INPUT_AIDL_HAPTICS := true
+
 # Debug
 TARGET_USES_LOGD := true
 TWRP_INCLUDE_LOGCAT := true
